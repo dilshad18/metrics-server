@@ -268,3 +268,10 @@ reloader:
     enabled: false
     # Set the minimum available replicas
     # minAvailable: 1
+  keel:
+    # keel policy (all/major/minor/patch/force)
+    policy: all
+    # images to track and update
+    images:
+      - repository: image.repository # [1]
+        tag: image.tag  # [2]
